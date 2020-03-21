@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/alekz29/CLionProjects/CW/lr_2_var16_Lipovetsky_quickSort/main.cpp
+iostream
+-
+vector
+-
+string
+-
+

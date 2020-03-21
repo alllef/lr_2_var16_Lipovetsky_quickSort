@@ -1,0 +1,3 @@
+C:/Users/alekz29/CLionProjects/CW/lr_2_var16_Lipovetsky_quickSort/cmake-build-debug/CMakeFiles/lr_2_var16_Lipovetsky_quickSort.dir
+C:/Users/alekz29/CLionProjects/CW/lr_2_var16_Lipovetsky_quickSort/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/alekz29/CLionProjects/CW/lr_2_var16_Lipovetsky_quickSort/cmake-build-debug/CMakeFiles/rebuild_cache.dir
