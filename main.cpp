@@ -53,13 +53,13 @@ void quickSort(vector<int> &array, unsigned int iLeft, unsigned int iRight) {
         }
     }
     array[iLeft] = pivot;
-    pivot = iLeft;
+    unsigned int iPivot = iLeft;
     iLeft = leftPos;
     iRight = rightPos;
-    if (iLeft < pivot)
-        quickSort(array, iLeft, pivot - 1);
-    if (iRight > pivot)
-        quickSort(array, pivot + 1, iRight);
+    if (iLeft < iPivot)
+        quickSort(array, iLeft, iPivot - 1);
+    if (iRight > iPivot)
+        quickSort(array, iPivot + 1, iRight);
 }
 
 void quickSortWithMedian(vector<int> &array, unsigned int iLeft, unsigned int iRight) {
