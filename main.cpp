@@ -40,8 +40,8 @@ void testMedianFactory() {
 }
 
 void quickSortFactory() {
-    //testQuickSort({1, 2, 3});
-    //testQuickSort({3, 2, 1});
+    // testQuickSort({1, 2, 3});
+    // testQuickSort({3, 2, 1});
     testQuickSort({2, 3, 1});
 
     //testQuickSort({1, 74, 567, 854, 3, 2, 78, 45, 23, 24, 56, 28});
@@ -74,15 +74,15 @@ void quickSort(vector<int> &array, unsigned int iLeft, unsigned int iRight) {
 
     while (iLeft < iRight) {
 
-        while (array[iLeft] <= pivot && iLeft < iRight) {
+        while (array[iLeft] < pivot && iLeft < iRight) {
             iLeft++;
         }
 
-        while (array[iRight] >= pivot && iLeft < iRight) {
+        while (array[iRight] > pivot && iLeft < iRight) {
             iRight--;
         }
 
-        swap(array, iLeft, iRight);
+        if (iLeft != iPivot && iRight != iPivot) swap(array, iLeft, iRight);
         if(iLeft != iRight) iLeft++;
         if(iLeft != iRight)iRight--;
     }
