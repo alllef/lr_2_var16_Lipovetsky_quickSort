@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 #include <iomanip>
 
 using namespace std;
@@ -88,8 +87,8 @@ unsigned int findMedian(vector<int> &array, unsigned int iLeft, unsigned int iRi
 }
 
 void initializeArray(vector<int> &array) {
-    for (int i = 0; i < array.size(); i++)
-        array[i] = rand() % 201 - 100;
+    for (int & i : array)
+        i = rand() % 201 - 100; // NOLINT(cert-msc30-c,cert-msc50-cpp)
 }
 
 void print(vector<int> &array) {
